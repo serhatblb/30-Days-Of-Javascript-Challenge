@@ -53,4 +53,5 @@ let firstName = 'Asabeneh' // tek tırnaklı string
 let lastName = 'Yetayeh' // tek tırnaklı string
 
 let fullName = firstName + space + lastName;
-console.log(fullName) 
+console.log(fullNamel) 
+
