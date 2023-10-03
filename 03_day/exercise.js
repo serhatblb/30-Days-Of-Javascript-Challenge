@@ -1,5 +1,5 @@
 // Exercise: Level 1
-/*
+
 //1- firstName, lastName, country, city, age, isMarried, year değişkenlerini oluşturun ve bunlara değer atayın. Farklı veri türlerini kontrol etmek için typeof operatörünü kullanın.
 let firstName = 'Serhat'
 console.log(typeof(firstName))
@@ -68,19 +68,19 @@ console.log(4 == '4')
 console.log(4 === '4')
 console.log('python'.length !== 'jargon'.length)
 
-6- console.log() kullanmadan önce aşağıdaki ifadelerin sonucunu bulun. Sonuca karar verdikten sonra console.log() kullanarak onaylayın.
+// 6- console.log() kullanmadan önce aşağıdaki ifadelerin sonucunu bulun. Sonuca karar verdikten sonra console.log() kullanarak onaylayın.
 
-    4 > 3 && 10 < 12 true
-    4 > 3 && 10 > 12 false
-    4 > 3 || 10 < 12 true
-    4 > 3 || 10 > 12 true
-    .!(4 > 3) false
-    .!(4 < 3) true
-    .!(false) true
-    .!(4 > 3 && 10 < 12) false
-    .!(4 > 3 && 10 > 12) true
-    .!(4 === '4') true
-    Hem dragon hem de python'da 'on' yoktur. false
+//     4 > 3 && 10 < 12 true
+//     4 > 3 && 10 > 12 false
+//     4 > 3 || 10 < 12 true
+//     4 > 3 || 10 > 12 true
+//     .!(4 > 3) false
+//     .!(4 < 3) true
+//     .!(false) true
+//     .!(4 > 3 && 10 < 12) false
+//     .!(4 > 3 && 10 > 12) true
+//     .!(4 === '4') true
+//     Hem dragon hem de python'da 'on' yoktur. false
 
 console.log('Answer 6')
 console.log(4 > 3 && 10 < 12)
@@ -94,15 +94,15 @@ console.log(!(4 > 3 && 10 < 12))
 console.log(!(4 > 3 && 10 > 12))
 console.log(!(4 === '4'))
 
-7- Aşağıdaki etkinlikleri yapmak için Date nesnesini kullanın.
+//7- Aşağıdaki etkinlikleri yapmak için Date nesnesini kullanın.
 
-    Bugün yıl nedir?
-    Bugünün ayı rakam olarak nedir?
-    Bugünün tarihi nedir?
-    Bugün sayı olarak gün nedir?
-    Şimdi saat kaç?
-    Dakika kaç şimdi?
-    1 Ocak 1970'den bugüne kadar geçen saniye sayısını bulun.
+    // Bugün yıl nedir?
+    // Bugünün ayı rakam olarak nedir?
+    // Bugünün tarihi nedir?
+    // Bugün sayı olarak gün nedir?
+    // Şimdi saat kaç?
+    // Dakika kaç şimdi?
+    // 1 Ocak 1970'den bugüne kadar geçen saniye sayısını bulun.
 
 console.log('Answer 7')
 const now = new Date()
@@ -113,9 +113,9 @@ console.log(now.getHours())
 console.log(now.getMinutes()) 
 console.log(now.getTime())  // 1695927541127 guncel :))
 
-*/
+
 // Exercise: Level 2
-/*
+
 //1- Kullanıcıdan üçgenin tabanını ve yüksekliğini girmesini ve bir üçgenin alanını hesaplamasını isteyen bir komut dosyası yazın (alan = 0,5 x b x h).
 let base = Number(prompt("Ucgenin Tabanini Girin" ));
 let height = Number(prompt("Ucgenin Yuksekligini Girin "));
@@ -212,9 +212,9 @@ console.log(`${date}-${month+1}-${year} ${hrs}:${mins}`);
 // Format 3
 console.log(`${date}/${month+1}/${year} ${hrs}:${mins}`);
 
-*/
 
-/** LEVEL 3 Challenges **/
+
+// LEVEL 3
 // 1: create a human readable format for date
 const d = new Date();
 
@@ -228,5 +228,3 @@ let month = d.getMonth();
 let date = d.getDate();
 
 console.log(`${year}-${month+1}-${date}  ${hrs}:${mins}`);
-
-/** LEVEL 3 completed **/
