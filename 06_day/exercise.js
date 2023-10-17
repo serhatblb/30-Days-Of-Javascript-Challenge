@@ -124,9 +124,40 @@ for (let l = 0;l<=100;l++){
 // Exercise: Level 2
 
 //1
-let alphanums = '123456789abcdefghijklmnopqrstuvwxyz123456789';
-let n = parseInt(Math.random()*alphanums.length) % 16;
+let characters = '123456789abcdefghijklmnopqrstuvwxyz123456789';
+let n = parseInt((Math.random()*characters.length)%16)
 let rands = [];
-for(let i = 0; i<=n;i++){
-    rands.push(alphanums[Math.floor(Math.random() * alphanums.length) -1]);   
-} console.log(rands.join(""));
+
+for(let i = 0; i<=n; i++){
+    rands.push(characters[Math.floor(Math.random()*characters.length) -1])
+}
+console.log(rands.join(""));
+
+//2
+let hexadecimalNumbers = '123456789abcdef';
+let hexChars = [];
+
+for(let i = 0; i<6; i++){
+    hexChars.push(hexadecimalNumbers[parseInt(Math.random()*hexadecimalNumbers.length)-1]);
+}
+console.log('#'+ hexChars.join(''));
+
+//3
+// let r = Math.floor(Math.random()*255)
+// let g = Math.floor(Math.random()*255)
+// let b = Math.floor(Math.random()*255)
+
+// console.log(`rcb(${r},${g},${b})`)
+
+let rgb = [];
+for(const char of '123'){
+    var red = (parseInt(Math.random()*255));
+    var green = (parseInt(Math.random()*255));
+    var blue = (parseInt(Math.random()*255));
+
+    rgb.push(red,green,blue);
+}
+console.log(`rgb(${red},${green},${blue})`);
+
+//4
+let country = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
