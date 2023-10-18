@@ -279,3 +279,6 @@ for (let i = fruits.length-1; i >= 0; i--) {
 for (const each of webTechs) {
     console.log(each);
 }
+
+
+// Exercise: Level 3
