@@ -12,7 +12,9 @@ const countries = [
     'Ireland',
     'Japan',
     'Kenya',
-    'Turkiyeeeeeee'
+    'Turkiyeeeeeee',
+    'serh',
+    'se h'
     ]
     
 const webTechs = [
@@ -27,7 +29,6 @@ const webTechs = [
     
 const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
-/*
 
 //1
 let i = 0
@@ -120,7 +121,7 @@ for (let l = 0;l<=100;l++){
     else sumOdd += l;
 }console.log(sumEven,sumOdd)
 
-*/
+
 
 // Exercise: Level 2
 
@@ -143,35 +144,35 @@ for(let i = 0; i<6; i++){
 }
 console.log('#'+ hexChars.join(''));
 
-//3
-// let r = Math.floor(Math.random()*255)
-// let g = Math.floor(Math.random()*255)
-// let b = Math.floor(Math.random()*255)
+3
+let r = Math.floor(Math.random()*255)
+let g = Math.floor(Math.random()*255)
+let b = Math.floor(Math.random()*255)
 
-// console.log(`rcb(${r},${g},${b})`)
+console.log(`rcb(${r},${g},${b})`)
 
-// let rgb = [];
-// for(const char of '123'){
-//     var red = (parseInt(Math.random()*255));
-//     var green = (parseInt(Math.random()*255));
-//     var blue = (parseInt(Math.random()*255));
+let rgb = [];
+for(const char of '123'){
+    var red = (parseInt(Math.random()*255));
+    var green = (parseInt(Math.random()*255));
+    var blue = (parseInt(Math.random()*255));
 
-//     rgb.push(red,green,blue);
-// }
-// console.log(`rgb(${red},${green},${blue})`);
+    rgb.push(red,green,blue);
+}
+console.log(`rgb(${red},${green},${blue})`);
 
-// //4
-// let capCountries = [];
-// for(const country of countries) {
-//     capCountries.push(country.toUpperCase());
-// } console.log(capCountries);
+//4
+let capCountries = [];
+for(const country of countries) {
+    capCountries.push(country.toUpperCase());
+} console.log(capCountries);
 
-//5
-// let countryNameLens = []
-// for(const country of countries){
-//     countryNameLens.push(country.length);
-// }
-// console.log(countryNameLens)
+5
+let countryNameLens = []
+for(const country of countries){
+    countryNameLens.push(country.length);
+}
+console.log(countryNameLens)
 
 //6
 let countryData = []
@@ -282,3 +283,79 @@ for (const each of webTechs) {
 
 
 // Exercise: Level 3
+
+//1
+let newCountryArr = []
+for(const newList of countries){
+    newCountryArr.push(newList);
+}console.log(newCountryArr)
+
+//2
+let sortedCountries = newCountryArr.sort()
+console.log(sortedCountries)
+
+//3
+let sortedWebTechs  = webTechs.sort();
+let sortedmernStack = mernStack.sort();
+console.log(sortedWebTechs,sortedmernStack)
+
+//4
+let landCountries = []
+let noLandCountries = []
+for(const country of countries){
+    if(country.includes('land')){
+        landCountries.push(country)
+    }else{
+        noLandCountries.push(country)
+    }
+}
+console.log(landCountries)
+console.log(noLandCountries)
+
+//5
+let maxLen = 0;
+let maxLenCountry;
+for(const country of countries){
+    if(country.length > maxLen){
+        maxLen = country.length;
+        maxLenCountry = country;
+    }console.log(maxLenCountry)
+}
+console.log(maxLenCountry)
+
+//6
+let landCountries2 = []
+let noLandCountries2 = []
+for(const country of countries){
+    if(country.includes('land')){
+        landCountries2.push(country)
+    }else{
+        noLandCountries2.push(country)
+    }
+}
+console.log(landCountries2)
+console.log(noLandCountries2)
+
+//7
+let only4char = []
+for(const country of countries){
+    if(country.length === 4){
+        only4char.push(country)
+    }
+}
+console.log(only4char)
+
+//8
+let twoWordCountries = [];
+for(const country of countries) {
+    if(country.split(' ').length > 1) 
+        twoWordCountries.push(country);
+} console.log(twoWordCountries);
+
+//9
+let reversedCountries  = countries.reverse();
+let capReverseCountries = []
+for(const country of countries){
+    capReverseCountries.push(country.toUpperCase());
+} 
+console.log(capReverseCountries);
