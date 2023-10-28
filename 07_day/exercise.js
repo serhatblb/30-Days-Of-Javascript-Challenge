@@ -130,3 +130,75 @@ function findMax(a, b, c) {
     } return max;
 }
 console.log(findMax(2, 34, 4));
+
+//LEVEL 2
+
+//1
+//  ax + by + c = 0
+function solveLinEquation(a, b, c){
+    var x = (-c - b) / a;
+    var y = (-c - a) / b;
+    return { x, y };
+}
+var result = solveLinEquation(2, 3, -6);
+console.log("x =", result.x); // x = 3
+console.log("y =", result.y); // y = 2
+
+//2
+//ax2 + bx + c = 0
+function solveQuadratic(a,b,c){
+    const discriminant = b * b - 4 * a * c;
+    if(discriminant > 0){
+        const root1 = (-b + Math.sqrt(discriminant))/ (2 * a);
+        const root2 = (-b - Math.sqrt(discriminant))/ (2 * a);
+        return [root1, root2];
+    }else if(discriminant === 0){
+        const singleRoot = -b / (2 * a);
+        return [singleRoot];
+    }else{
+        return "No way."; //If the discriminant is negative, there is no solution, return an empty array.
+    }
+}
+console.log(solveQuadratic()) // {0}
+console.log(solveQuadratic(1, 4, 4)) // {-2}
+console.log(solveQuadratic(1, -1, -2)) // {2, -1}
+console.log(solveQuadratic(1, 7, 12)) // {-3, -4}
+console.log(solveQuadratic(1, 0, -4)) //{2, -2}
+console.log(solveQuadratic(1, -1, 0)) //{1, 0}
+
+//3
+function printArray(arr){
+    for(let i = 0; i < arr.length; i++){
+        console.log(arr[i]);
+    }
+}
+const myArray = [1, 2, 3, 4, 5];
+printArray(myArray);
+printArray([2,3,45,3,4343,43,342])
+
+//4
+function showDateTime() {
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+    const year = now.getFullYear();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    
+    const formattedDateTime = `${day}/${month}/${year} ${hours}:${minutes}`;
+    console.log(formattedDateTime);
+}
+showDateTime();
+
+//5
+function swapValues(x, y){
+    console.log("Before swapping: x =", x, "y =", y);
+    const temp = x;
+    x = y;
+    y = temp
+    console.log("After swapping: x =", x, "y =", y);
+}
+swapValues(3, 4) 
+swapValues(4, 5) 
+
+//6
