@@ -397,32 +397,78 @@ console.log(userIdGenerator())
 //LEVEL 3
 
 //1
-function userIdGeneratedByUser() {
-    // Kullanıcıdan karakter uzunluğunu alın
-    var karakterUzunlugu = parseInt(prompt("Her kullanıcı kimliği kaç karakter uzunluğunda olmalı?", 7));
+// function userIdGeneratedByUser() {
+//     var characterLength = prompt("Enter Character Length");
+//     var numberOfIDs = parseInt(prompt("Enter how many user IDs you want "));
+//     var userIDs = [];
 
-    // Kullanıcıdan kaç kullanıcı kimliği oluşturulacağını alın
-    var kimlikSayisi = parseInt(prompt("Kaç tane kullanıcı kimliği oluşturmak istersiniz?", 5));
+//     for (var i = 0; i < numberOfIDs; i++) {
+//         var userID = '';
+//         for (var j = 0; j < characterLength; j++) {
+//             var character = String.fromCharCode(Math.floor(Math.random() * 26) + 97); // Create a lowercase character
+//             userID += character;
+//         }
+//         userIDs.push(userID);
+//     }
+//     console.log(userIDs.join('\n'));
+// }
+// console.log(userIdGeneratedByUser())
 
-    // Oluşturulan kullanıcı kimliklerini saklayacak dizi oluşturun
-    var kullaniciKimlikleri = [];
+//2
+function rgbColorGenerator() {
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
 
-    // Belirtilen sayıda kullanıcı kimliği oluşturun
-    for (var i = 0; i < kimlikSayisi; i++) {
-        var kullaniciKimlik = '';
-
-        // Belirtilen karakter uzunluğunda rastgele bir kullanıcı kimliği oluşturun
-        for (var j = 0; j < karakterUzunlugu; j++) {
-            var karakter = String.fromCharCode(Math.floor(Math.random() * 26) + 97); // Küçük harf oluşturun
-            kullaniciKimlik += karakter;
-        }
-
-        kullaniciKimlikleri.push(kullaniciKimlik);
-    }
-
-    // Oluşturulan kullanıcı kimliklerini gösterin
-    for (var i = 0; i < kullaniciKimlikleri.length; i++) {
-        console.log(kullaniciKimlikleri[i]);
-    }
+    return `rgb(${r},${g},${b})`;
 }
-console.log(userIdGeneratedByUser())
+console.log(rgbColorGenerator())
+
+//3
+function arrayOfHexaColors(numColors) {
+    var hexColors = [];
+
+    for (var i = 0; i < numColors; i++) {
+        var hexColor = '#';
+        for (var j = 0; j < 6; j++) {
+            var hexDigit = Math.floor(Math.random() * 16); // 0-15 arası rastgele bir sayı
+            hexColor += hexDigit.toString(16); // Onaltılık forma dönüştürüp renge ekler
+        }
+        hexColors.push(hexColor);
+    }
+
+    return hexColors;
+}
+console.log(arrayOfHexaColors(5));
+
+//4
+function arrayOfRgbColors(rgbNumColors) {
+    var rgbColors = [];
+
+    for (var i = 0; i < rgbNumColors; i++) {
+        var r = Math.floor(Math.random() * 256);
+        var g = Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        var rgbColor = `rgb(${r},${g},${b})`;
+
+        rgbColors.push(rgbColor);
+    }
+    return rgbColors;
+}
+console.log(arrayOfRgbColors(5))
+
+//5
+function convertHexaToRgb(hexColor) {
+    hexColor = hexColor.replace('#', '');
+
+    var r = parseInt(hexColor.slice(0, 2), 16); // Kırmızı bileşen
+    var g = parseInt(hexColor.slice(2, 4), 16); // Yeşil bileşen
+    var b = parseInt(hexColor.slice(4, 6), 16); // Mavi bileşen
+
+    var rgbColor = `rgb(${r}, ${g}, ${b})`;
+    return rgbColor;
+}
+
+var hexColor = "#1F2D8D";
+var rgbColor = convertHexaToRgb(hexColor);
+console.log("RGB Renk:", rgbColor);
