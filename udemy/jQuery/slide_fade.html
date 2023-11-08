@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <img src="../Vladimir-Orlovsky-Horses-Bathing.jpg" width="150px">
+    </div>
+    <p>Javascript Egitimi</p> <br>
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="toggle">Toggle</button>
+
+    <br><br>
+
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadeto">Fade To</button>
+    <button id="toggle2">Toggle</button>
+
+    <script>
+        $(document).ready(function () {
+            //Slide
+            $("#slideup").click(function () {
+                $("div").slideUp(3000);
+            });
+            $("#slidedown").click(function () {
+                $("div").slideDown(3000);
+            });
+            $("#toggle").click(function () {
+                $("div").slideToggle("slow");
+            });
+
+            //Fade
+
+            $("#fadein").click(function () {
+                $("div").fadeIn("slow");
+            });
+            $("#fadeout").click(function () {
+                $("div").fadeOut(1000, function () {
+                    alert("div gosterildi.")
+                });
+            });
+            $("#fadeto").click(function () {
+                $("div").fadeTo("slow", 0.5);
+            });
+            $("#toggle2").click(function () {
+                $("div").fadeToggle("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>

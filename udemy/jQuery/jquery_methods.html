@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        .highlight {
+            background-color: gray;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">Link 1</a>
+    <h3 id="header">Egitimler</h3>
+    <ul id="liste">
+        <li class="item1">Javascprit</li>
+        <li class="item2">SQL <a href="#">Link 12</a></li>
+        <li class="item3">Python</li>
+    </ul>
+
+    <input id="ad" type="text" placeholder="Adiniz">;
+    <input id="soyad" type="text" placeholder="Soy Adiniz">;
+    <button id="btnKayit" onclick="kayitol();">Kaydol</button>;
+
+    <script>
+        // console.log($("h3").text());
+        // console.log($("ul li").text());
+        $("h3").text("Udemy Egitimileri");
+
+        function kayitol() {
+            var ad = $("#ad").val();
+            var soyad = $("#soyad").val();
+            console.log(ad + " " + soyad + " " + "kurrsa kayit oldu.")
+        }
+
+        $("#ad").addClass("highlight");
+        $("#ad").removeClass("highlight");
+        $("#soyad").addClass("orange");
+    </script>
+</body>
+
+</html>

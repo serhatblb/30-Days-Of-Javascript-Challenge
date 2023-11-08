@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Uygulamasi</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #massage-box {
+            background-color: blueviolet;
+            text-align: center;
+            color: aqua;
+        }
+
+        #header {
+            cursor: pointer;
+            height: 20px;
+            padding: 10px;
+            border-bottom: 1px solid salmon;
+        }
+
+        #content {
+            height: 200px;
+            padding: 10px;
+            display: none;
+        }
+
+        #close {
+            float: right;
+        }
+
+        #close:hover {
+            color: brown;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#header").click(function () {
+                $("#content").toggle("slow");
+            });
+            $("#close").click(function () {
+                $("#massage-box").hide("slow");
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+
+    <div id="massage-box">
+        <div id="header">
+            <span id="close">X</span>Mesajiniz Var
+        </div>
+        <div id="content">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

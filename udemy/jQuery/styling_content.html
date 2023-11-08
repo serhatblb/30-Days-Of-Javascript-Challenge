@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <a href="#">Link 1</a>
+    <h3 id="header">Egitimler</h3>
+    <ul id="liste">
+        <li class="item1">Javascprit</li>
+        <li class="item2">SQL <a href="#">Link 12</a></li>
+        <li class="item3">Python</li>
+    </ul>
+    <script>
+        // document.getElementById("header").style.color = "blue";
+        $("#header").css("color", "orange");
+        $("#liste a").css("text-decoration", "none");
+        $("a").css("text-decoration", "green wavy underline");
+
+        //deger atayarak
+        var styles = {
+            color: "blue",
+            fontSize: "22px",
+            border: "1px solid gray",
+        }
+        $("ul li").css(styles);
+
+        //javascript ile
+        var listeler = document.querySelectorAll("li");
+        for (var i = 0; i < listeler.length; i++) {
+            listeler[i].style.color = "red";
+        }
+
+        //css ile
+        $("a").css({
+            color: "green",
+            fontSize: "22px",
+            border: "2px solid blue",
+        })
+    </script>
+</body>
+
+</html>
