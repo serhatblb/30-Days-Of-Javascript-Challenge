@@ -15,8 +15,8 @@ const countries = [
     'Turkiyeeeeeee',
     'serh',
     'se h'
-    ]
-    
+]
+
 const webTechs = [
     'HTML',
     'CSS',
@@ -25,101 +25,102 @@ const webTechs = [
     'Redux',
     'Node',
     'MongoDB'
-    ]
-    
+]
+
 const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
 
 //1
 let i = 0
 let z = 0
-while(i<=10){
+while (i <= 10) {
     console.log(i)
     i++;
 }
 
-do{
+do {
     console.log(z)
     z++
-}while(z<=10)
+} while (z <= 10)
 
 //2
 let ii = 10
 let zz = 10
-while(ii>=0){
+while (ii >= 0) {
     console.log(ii)
     ii--;
 }
 
-do{
+do {
     console.log(zz)
     zz--;
-}while(zz>=0)
+} while (zz >= 0)
 
 3
 let n = prompt("Bir sayi giriniz: ");
 let i = 0;
 
-for(i;i<=n;i++){
+for (i; i <= n; i++) {
     console.log(i);
 }
 
 //4
-for(i=1;i<=7;i++){
+for (i = 1; i <= 7; i++) {
     console.log("#".repeat(i));
 }
 
 //5
-let a=0
-for(a;a<=10;a++){
+let a = 0
+for (a; a <= 10; a++) {
     console.log(`${a} x ${a} = ${a*a}`)
 }
 
 //6
 let i = 0
 console.log("i\ti^2\ti^3");
-for(i;i<=10;i++) {
+for (i; i <= 10; i++) {
     console.log(`${i}\t${i**2}\t${i**3}`)
 }
 
 //7
-for(a=0;a<=100;a += 2){
+for (a = 0; a <= 100; a += 2) {
     console.log(a)
 }
 
 //8
-for(b=1;b<=100;b+=2){
+for (b = 1; b <= 100; b += 2) {
     console.log(b)
 }
 
 //9
-let count=0
-let i,j ;
-for(j=2;j<=100;j++){
-    for( i=1;i<=j;i++){
-        if(j%i==0)
+let count = 0
+let i, j;
+for (j = 2; j <= 100; j++) {
+    for (i = 1; i <= j; i++) {
+        if (j % i == 0)
             count++
-        }
-    if(count==2)
-    console.log(j)
-    count=0
+    }
+    if (count == 2)
+        console.log(j)
+    count = 0
 }
 
 //10
-let toplam=0
+let toplam = 0
 let k = 0
-for(k;k<=100;k++){
-    toplam +=k
+for (k; k <= 100; k++) {
+    toplam += k
 }
 console.log(`The sum of all numbers from 0 to 100 is ${toplam}`)
 
 //12
 let sumEven = 0;
 let sumOdd = 0;
-for (let l = 0;l<=100;l++){
-    if(l%2==0) sumEven += l;
+for (let l = 0; l <= 100; l++) {
+    if (l % 2 == 0) sumEven += l;
     else sumOdd += l;
-}console.log(sumEven,sumOdd)
+}
+console.log(sumEven, sumOdd)
 
 
 
@@ -127,11 +128,11 @@ for (let l = 0;l<=100;l++){
 
 //1
 let characters = '123456789abcdefghijklmnopqrstuvwxyz123456789';
-let n = parseInt((Math.random()*characters.length)%16)
+let n = parseInt((Math.random() * characters.length) % 16)
 let rands = [];
 
-for(let i = 0; i<=n; i++){
-    rands.push(characters[Math.floor(Math.random()*characters.length) -1])
+for (let i = 0; i <= n; i++) {
+    rands.push(characters[Math.floor(Math.random() * characters.length) - 1])
 }
 console.log(rands.join(""));
 
@@ -139,79 +140,80 @@ console.log(rands.join(""));
 let hexadecimalNumbers = '123456789abcdef';
 let hexChars = [];
 
-for(let i = 0; i<6; i++){
-    hexChars.push(hexadecimalNumbers[parseInt(Math.random()*hexadecimalNumbers.length)-1]);
+for (let i = 0; i < 6; i++) {
+    hexChars.push(hexadecimalNumbers[parseInt(Math.random() * hexadecimalNumbers.length) - 1]);
 }
-console.log('#'+ hexChars.join(''));
+console.log('#' + hexChars.join(''));
 
 3
-let r = Math.floor(Math.random()*255)
-let g = Math.floor(Math.random()*255)
-let b = Math.floor(Math.random()*255)
+let r = Math.floor(Math.random() * 255)
+let g = Math.floor(Math.random() * 255)
+let b = Math.floor(Math.random() * 255)
 
 console.log(`rcb(${r},${g},${b})`)
 
 let rgb = [];
-for(const char of '123'){
-    var red = (parseInt(Math.random()*255));
-    var green = (parseInt(Math.random()*255));
-    var blue = (parseInt(Math.random()*255));
+for (const char of '123') {
+    var red = (parseInt(Math.random() * 255));
+    var green = (parseInt(Math.random() * 255));
+    var blue = (parseInt(Math.random() * 255));
 
-    rgb.push(red,green,blue);
+    rgb.push(red, green, blue);
 }
 console.log(`rgb(${red},${green},${blue})`);
 
 //4
 let capCountries = [];
-for(const country of countries) {
+for (const country of countries) {
     capCountries.push(country.toUpperCase());
-} console.log(capCountries);
+}
+console.log(capCountries);
 
 5
 let countryNameLens = []
-for(const country of countries){
+for (const country of countries) {
     countryNameLens.push(country.length);
 }
 console.log(countryNameLens)
 
 //6
 let countryData = []
-for(const country of countries){
+for (const country of countries) {
     let len = country.length;
-    let first3Chars = country.slice(0,3).toUpperCase();
-    countryData.push([country,first3Chars,len]);
+    let first3Chars = country.slice(0, 3).toUpperCase();
+    countryData.push([country, first3Chars, len]);
 }
 for (const arr of countryData) {
     console.log(arr);
-    }
+}
 
 //7
 let noCountry = []
 let landCountry = []
 
-for(const i of countries){
-    if(i.includes('land')){
+for (const i of countries) {
+    if (i.includes('land')) {
         landCountry.push(i);
         noCountry = false;
     }
 }
-if(noCountry){
+if (noCountry) {
     console.log("There are no countries ending with land")
-}else{
-    for(const country of landCountry){
+} else {
+    for (const country of landCountry) {
         console.log(country);
     }
 }
 
 //8
 let endsWith_ia = [];
-for (const country of countries){
-    if(country.endsWith('ia')){
+for (const country of countries) {
+    if (country.endsWith('ia')) {
         endsWith_ia.push(country)
-    }   
+    }
 }
-if(endsWith_ia.length > 0){
-    for(const each of endsWith_ia)
+if (endsWith_ia.length > 0) {
+    for (const each of endsWith_ia)
         console.log(each);
 }
 
@@ -219,13 +221,13 @@ if(endsWith_ia.length > 0){
 let maxLength = 0;
 let maxLengthCountry;
 
-for(const country of countries){
-    if(country.length > maxLength){
+for (const country of countries) {
+    if (country.length > maxLength) {
         maxLength = country.length;
         maxLengthCountry = country;
     }
 }
-console.log(maxLengthCountry,maxLengthCountry.length);
+console.log(maxLengthCountry, maxLengthCountry.length);
 
 //10
 let lenFiveCountries = [];
@@ -238,19 +240,20 @@ console.log(lenFiveCountries);
 //11
 let length = webTechs[0].length;
 let word;
-for(const tech of webTechs) {
+for (const tech of webTechs) {
     if (tech.length > length) {
-        word = tech;    
+        word = tech;
         length = tech.length;
     }
-} console.log(word);
+}
+console.log(word);
 
 //12
 let techWithLen = [];
 for (const tech of webTechs) {
     let len = tech.length;
     let caps = tech.toUpperCase();
-    
+
     techWithLen.push([caps, len])
 };
 console.log(techWithLen);
@@ -261,20 +264,22 @@ let mernStackk = [];
 
 for (const tech of mernArray) {
     mernStackk.push(tech[0]);
-}; console.log(mernStackk.join(''));
+};
+console.log(mernStackk.join(''));
 
 //14 
-for(const tech of webTechs) {
+for (const tech of webTechs) {
     console.log(tech);
 }
 
 //15 
-let fruits = ['banana', 'orange', 'mango', 'lemon','serhat'];
+let fruits = ['banana', 'orange', 'mango', 'lemon', 'serhat'];
 let reversedFruits = [];
 
-for (let i = fruits.length-1; i >= 0; i--) {
+for (let i = fruits.length - 1; i >= 0; i--) {
     reversedFruits.push(fruits[i]);
-} console.log(reversedFruits);
+}
+console.log(reversedFruits);
 
 //16  
 for (const each of webTechs) {
@@ -286,26 +291,27 @@ for (const each of webTechs) {
 
 //1
 let newCountryArr = []
-for(const newList of countries){
+for (const newList of countries) {
     newCountryArr.push(newList);
-}console.log(newCountryArr)
+}
+console.log(newCountryArr)
 
 //2
 let sortedCountries = newCountryArr.sort()
 console.log(sortedCountries)
 
 //3
-let sortedWebTechs  = webTechs.sort();
+let sortedWebTechs = webTechs.sort();
 let sortedmernStack = mernStack.sort();
-console.log(sortedWebTechs,sortedmernStack)
+console.log(sortedWebTechs, sortedmernStack)
 
 //4
 let landCountries = []
 let noLandCountries = []
-for(const country of countries){
-    if(country.includes('land')){
+for (const country of countries) {
+    if (country.includes('land')) {
         landCountries.push(country)
-    }else{
+    } else {
         noLandCountries.push(country)
     }
 }
@@ -315,21 +321,22 @@ console.log(noLandCountries)
 //5
 let maxLen = 0;
 let maxLenCountry;
-for(const country of countries){
-    if(country.length > maxLen){
+for (const country of countries) {
+    if (country.length > maxLen) {
         maxLen = country.length;
         maxLenCountry = country;
-    }console.log(maxLenCountry)
+    }
+    console.log(maxLenCountry)
 }
 console.log(maxLenCountry)
 
 //6
 let landCountries2 = []
 let noLandCountries2 = []
-for(const country of countries){
-    if(country.includes('land')){
+for (const country of countries) {
+    if (country.includes('land')) {
         landCountries2.push(country)
-    }else{
+    } else {
         noLandCountries2.push(country)
     }
 }
@@ -338,8 +345,8 @@ console.log(noLandCountries2)
 
 //7
 let only4char = []
-for(const country of countries){
-    if(country.length === 4){
+for (const country of countries) {
+    if (country.length === 4) {
         only4char.push(country)
     }
 }
@@ -347,15 +354,18 @@ console.log(only4char)
 
 //8
 let twoWordCountries = [];
-for(const country of countries) {
-    if(country.split(' ').length > 1) 
+for (const country of countries) {
+    if (country.split(' ').length > 1)
         twoWordCountries.push(country);
-} console.log(twoWordCountries);
+}
+console.log(twoWordCountries);
 
 //9
-let reversedCountries  = countries.reverse();
+let reversedCountries = countries.reverse();
 let capReverseCountries = []
-for(const country of countries){
+for (const country of countries) {
     capReverseCountries.push(country.toUpperCase());
-} 
+}
 console.log(capReverseCountries);
+
+// day 6 exercises finished.
