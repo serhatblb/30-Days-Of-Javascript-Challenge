@@ -96,3 +96,5 @@ function mostSpokenLanguages(countries, n) {
 console.log(mostSpokenLanguages(['Finland', 'Sweden', 'Norway'], 10));
 
 console.log(mostSpokenLanguages(['Finland', 'Sweden', 'Norway'], 3));
+
+// day 10 exercises finished.
