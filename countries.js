@@ -2010,3 +2010,5 @@ const countries = [{
         currency: 'Botswana pula'
     }
 ]
+
+// add countries.js file
