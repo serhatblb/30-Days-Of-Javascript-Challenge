@@ -144,3 +144,5 @@ console.log("Name: ", country.name)
 console.log("Capital: ", country.capital)
 console.log("Population: ", country.population);
 console.log("Languages: ", country.languages);
+
+// day 8 exercises finished.
