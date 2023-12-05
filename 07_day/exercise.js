@@ -472,3 +472,5 @@ function convertHexaToRgb(hexColor) {
 var hexColor = "#1F2D8D";
 var rgbColor = convertHexaToRgb(hexColor);
 console.log("RGB Renk:", rgbColor);
+
+// day 7 exercises finished.
