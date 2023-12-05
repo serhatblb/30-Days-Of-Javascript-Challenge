@@ -16,7 +16,7 @@ console.log(challenge.toUpperCase())
 console.log(challenge.toLowerCase())
 
 //6 substring()substr() veya substring() yöntemini kullanarak string'in ilk kelimesini kesin-silin (dilimleyin)
-console.log(challenge.substring(0,2))
+console.log(challenge.substring(0, 2))
 
 //7 Days Of JavaScript ifadesini 30 Days Of JavaScript'ten ayırın.
 console.log(challenge.split('30'))
@@ -31,11 +31,11 @@ console.log(challenge.split())
 console.log(challenge.split(' '))
 
 //11 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' dizeyi virgülden split ve bir dizi olarak değiştirin.
-let dize='Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+let dize = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
 console.log(dize.split(','))
 
 //12 replace() yöntemini kullanarak 30 Days of JavaScript'i 30 Days of Python olarak değiştirin.
-console.log(challenge.replace('JavaScript','Python'))
+console.log(challenge.replace('JavaScript', 'Python'))
 
 //13 JavaScript'in 30 Günü' dizesinde dizin 15'teki karakter nedir? charAt() yöntemini kullanın.
 console.log(challenge.charAt(15))
@@ -50,7 +50,7 @@ console.log(challenge.indexOf('a'))
 console.log(challenge.lastIndexOf('a'))
 
 // 17 Aşağıdaki cümlede çünkü kelimesinin ilk geçtiği yeri bulmak için indexOf kullanın: 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtır'
-let cumle= 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtir.'
+let cumle = 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtir.'
 console.log(cumle.indexOf('çünkü'))
 
 //18 Aşağıdaki cümlede çünkü kelimesinin son geçtiği yeri bulmak için lastIndexOf kullanın: 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtır'
@@ -73,7 +73,7 @@ console.log(challenge.match('a'))
 
 //24 concat() kullanın ve '30 Days of' ve 'JavaScript'i tek bir dize olan '30 Days of JavaScript' ile birleştirin
 let conc = ' 30 Days of '
-console.log(conc.concat('JavaScript')) 
+console.log(conc.concat('JavaScript'))
 
 //25 30 Gün JavaScript'i 2 kez yazdırmak için repeat() yöntemini kullanın
 console.log(challenge.repeat(2))
@@ -87,21 +87,21 @@ console.log(text)
 
 //2 console.log() kullanarak aşağıdaki ifadeyi yazdırın:
 // "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
-let text2= "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+let text2 = "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
 console.log(text2)
 
 //3 '10' tipinin tam olarak 10'a eşit olup olmadığını kontrol edin. Değilse tam olarak eşit yapın.
-let number= '10'
-console.log(typeof(number))
+let number = '10'
+console.log(typeof (number))
 
 //4 parseFloat('9.8') 10'a tam olarak eşit değilse, 10'a eşit olup olmadığını kontrol edin.
 let num1 = parseFloat('9.8')
-let num2= 10
-console.log(typeof(num1)==typeof(num2))
+let num2 = 10
+console.log(typeof (num1) == typeof (num2))
 
 //5 Hem python hem de jargonda 'on' ifadesinin bulunup bulunmadığını kontrol edin
 let python = 'python'
-let jargon= 'Umarım bu kurs jargonla dolu değildir'
+let jargon = 'Umarım bu kurs jargonla dolu değildir'
 console.log(python.includes('on'))
 console.log(jargon.includes('on'))
 
@@ -113,11 +113,11 @@ randomNumber = Math.floor(Math.random() * 100);
 console.log(randomNumber)
 
 //50 ile 100 arasında rastgele bir sayı üretin.
-randomNumber2 = Math.floor(Math.random() * (100 - 50)+50);
+randomNumber2 = Math.floor(Math.random() * (100 - 50) + 50);
 console.log(randomNumber2)
 
 //9 Dahil olmak üzere 0 ile 255 arasında rastgele bir sayı oluşturun.
-randomNumber3 = Math.floor(Math.random() * (255)+0);
+randomNumber3 = Math.floor(Math.random() * (255) + 0);
 console.log(randomNumber3)
 
 //10 Rastgele bir sayı kullanarak 'JavaScript' dize karakterlerine erişin.
@@ -133,7 +133,7 @@ console.log(randomNumber3)
 console.log('1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125')
 
 //12 substr kullanarak çünkü çünkü ifadesini aşağıdaki cümleden ayırın:'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtır'
-console.log(cumle.substring(37,48))
+console.log(cumle.substring(37, 48))
 
 
 // Exercise: Level 3
@@ -160,3 +160,4 @@ salaries.forEach(element => {
 })
 console.log(totalAnnualIncome)
 
+//Finished
