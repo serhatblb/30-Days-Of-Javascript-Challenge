@@ -109,3 +109,5 @@ for (const {
     console.log('languages', languages);
     console.log('population', population);
 }
+
+// day 11 exercises finished.
