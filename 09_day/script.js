@@ -140,3 +140,5 @@ let indexOfRussia = countries.findIndex(c => c === 'Russia');
 console.log(indexOfRussia)
 
 // Exercise: LEVEL 2
+
+//1
