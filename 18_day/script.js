@@ -103,4 +103,4 @@ fetch(countriesAPI)
         console.error('Hata oluştu:', error);
     });
 
-// day 6 exercises finished.
+// day 18 exercises finished.
