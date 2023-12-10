@@ -175,3 +175,5 @@ console.log('Variance: ', statistics.variance());
 console.log('Standard Deviation: ', statistics.std());
 console.log('Frequency Distribution: ', statistics.freqDist());
 console.log('Describe: ', statistics.describe());
+
+// day 15 exercises finished.
