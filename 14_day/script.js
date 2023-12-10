@@ -64,3 +64,5 @@ function findLargestNumber(arr) {
 console.log(findLargestNumber([1, 5, 10, 3])); // Output: 10
 console.log(findLargestNumber([])); // Output: Error: Array is empty: Cannot find the largest number!
 console.log(findLargestNumber([1, 2, 'abc', 4])); // Output: Error: Invalid data type: Non-numeric element(s) found in the array
+
+// day 14 exercises finished.
