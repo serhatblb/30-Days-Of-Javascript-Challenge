@@ -102,3 +102,5 @@ fetch(countriesAPI)
     .catch(error => {
         console.error('Hata oluştu:', error);
     });
+
+// day 6 exercises finished.
