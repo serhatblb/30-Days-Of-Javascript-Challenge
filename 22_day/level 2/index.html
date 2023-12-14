@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day22-Level 2</title>
+    <style>
+        .countryList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+
+        }
+
+        .countryBox {
+            width: 200px;
+            height: 100px;
+            margin: 5px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-transform: uppercase;
+            line-height: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">WORLD COUNTRIES LIST</h1>
+    <h2 style="text-align: center;"><strong>Total Number of countries: 193</strong></h2>
+    <h2 style="text-align: center;">30DaysOfJavaScript:DOM Day 2</h2>
+    <h3 style="text-align: center;">Author: Asabeneh Yetayeh</h3>
+
+    <div class="countryList" id="countryList"></div>
+
+    <script src="countries.js"></script>
+    <script>
+        const countryList = document.getElementById('countryList');
+
+        countries.forEach(country => {
+            const countryBox = document.createElement('div');
+            countryBox.textContent = country.name;
+            countryBox.className = 'countryBox';
+            countryList.appendChild(countryBox);
+        });
+    </script>
+</body>
+
+</html>
