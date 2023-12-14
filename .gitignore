@@ -92,7 +92,7 @@ Thumbs.db
 
 # img
 *.img
-*.png
+
 *.jpg
 img/
 
