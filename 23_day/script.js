@@ -16,4 +16,4 @@ color.addEventListener('input', e => {
 
 })
 
-//day 23 exercises not finished.
+// day 23 exercises finished.
