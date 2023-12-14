@@ -15,3 +15,5 @@ color.addEventListener('input', e => {
     document.body.style.backgroundColor = e.target.value
 
 })
+
+//day 23 exercises not finished.
